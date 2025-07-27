@@ -10,8 +10,9 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 
 # --- Config ---
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # Set this in Render environment variables!
-WEBHOOK_URL = f"https://magnetlinksbotv2.onrender.com"
+BOT_TOKEN = os.getenv("BOT_TOKEN") # Set this in Render environment variables!
+WEBHOOK_PATH="/"
+WEBHOOK_URL = f"https://magnetlinksbotv2.onrender.com{WEBHOOK_PATH}"
 
 # --- Bot & Dispatcher ---
 bot = Bot(token=BOT_TOKEN,default=DefaultBotProperties(parse_mode=ParseMode.HTML))
