@@ -14,7 +14,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")  # Set this in Render environment variables!
 WEBHOOK_URL = f"https://magnetlinksbotv2.onrender.com"
 
 # --- Bot & Dispatcher ---
-bot = Bot(token=BOT_TOKEN,default=DefaultBotProperties(parse_mode=ParseMode.HTML)L)
+bot = Bot(token=BOT_TOKEN,default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 
 # --- In-Memory Storage ---
