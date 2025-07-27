@@ -1,3 +1,5 @@
 requests
 aiogram
 bs4
+aiohttp
+async_lru
